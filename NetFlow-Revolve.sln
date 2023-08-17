@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetFlow-Revolve", "NetFlow-Revolve.csproj", "{85A5D004-DB99-47E8-878A-90BEE0E8C80E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85A5D004-DB99-47E8-878A-90BEE0E8C80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A5D004-DB99-47E8-878A-90BEE0E8C80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A5D004-DB99-47E8-878A-90BEE0E8C80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A5D004-DB99-47E8-878A-90BEE0E8C80E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E8D8824-94FF-4AD2-B68B-EC7EDA0779ED}
+	EndGlobalSection
+EndGlobal
