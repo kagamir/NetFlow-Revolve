@@ -22,7 +22,7 @@ jobs:
         fetch-depth: 0
     
     - name: test
-      run: pwd && ls -l
+      run: dir
     
     - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
       uses: actions/setup-dotnet@v3
