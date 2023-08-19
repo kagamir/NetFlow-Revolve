@@ -2,7 +2,8 @@ name: dotnet package
 
 on:
   push:
-    branches: [ "main" ]
+    tags:
+    - '*'
 
 jobs:
 
@@ -31,3 +32,11 @@ jobs:
     
     - name: Build
       run: dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true -p:PublishSingleFile=true --self-contained false
+
+    - name: Create Release
+      uses: actions/create-release@v1
+    
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: .\bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe
