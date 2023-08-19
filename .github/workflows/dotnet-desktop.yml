@@ -36,4 +36,5 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: .\bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe
+        files: |
+          bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe
