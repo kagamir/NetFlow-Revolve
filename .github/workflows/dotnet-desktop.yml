@@ -31,10 +31,11 @@ jobs:
       run: dotnet restore
     
     - name: Build
-      run: dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true -p:PublishSingleFile=true --self-contained false
+      run: |
+        dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true -p:PublishSingleFile=true --self-contained false
+        copy bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe NetFlow-Revolve.exe
     
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: |
-          bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe
+        files: NetFlow-Revolve.exe
