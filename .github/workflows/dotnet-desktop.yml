@@ -33,9 +33,9 @@ jobs:
     - name: Build
       run: |
         dotnet publish -c Release -r win-x64 -p:PublishReadyToRun=true -p:PublishSingleFile=true --self-contained false
-        copy bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe NetFlow-Revolve.exe
+        copy bin\Release\net6.0-windows\win-x64\publish\NetFlow-Revolve.exe NetFlow-Revolve-${{ github.ref_name }}.exe
     
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
-        files: NetFlow-Revolve.exe
+        files: NetFlow-Revolve-${{ github.ref_name }}.exe
